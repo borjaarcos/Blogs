@@ -94,6 +94,7 @@ class PostController extends AbstractController
     public function show(Request $request, $id)
     {
         $post = $this->getDoctrine()->getRepository(Post::class)->find($id);
+        $user= $this->getDoctrine()->getRepository(User::class)->findAll();
         $comentariosActuales = $this->getDoctrine()->getRepository(Comment::class)->findBy(array('post' => $post));
         $comentario = new Comment();
         $form = $this->createForm(ComentType::class, $comentario);
@@ -108,7 +109,7 @@ class PostController extends AbstractController
             $entityManager->persist($comentario);
             $entityManager->flush();
 
-            return $this->redirectToRoute('app_homepage');;
+            return $this->redirectToRoute('app_homepage');
         }
         //renderizar el formulario
         return $this->render('post/show.html.twig', [
