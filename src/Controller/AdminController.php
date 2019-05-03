@@ -16,6 +16,7 @@ use Symfony\Component\Security\Http\Authentication\AuthenticationUtils;
 use App\Form\ComentType;
 use App\Form\TagType;
 use App\Entity\Post;
+use App\Form\PostType;
 /**
  * Class AdminController
  * @package App\Controller
@@ -162,7 +163,7 @@ class AdminController extends AbstractController
             $entityManager = $this->getDoctrine()->getManager();
             $entityManager->flush();
 
-            return $this->redirectToRoute('app_homepage');;
+            return $this->redirectToRoute('app_homepage');
         }
 
         //renderizar el formulario
