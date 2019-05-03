@@ -18,7 +18,7 @@ use Symfony\Component\HttpFoundation\Request;
 class PostController extends AbstractController
 {
     /**
-     * @Route("mispost", name="app_post")
+     * @Route("/post", name="app_post")
      */
     public function HomePost()
     {
@@ -59,7 +59,7 @@ class PostController extends AbstractController
         ]);
     }
     /**
-     * @Route("/post/edit/{id}", name="post_edit")
+     * @Route("post/edit/{id}", name="post_edit")
      */
     public function edit(Request $request, $id)
     {
@@ -120,7 +120,7 @@ class PostController extends AbstractController
 
     }
     /**
-     * @Route("post/delete/{id}", name="post_adminedit")
+     * @Route("post/delete/{id}", name="post_delete")
      * @Method({"DELETE"})
      */
     public function deletePost(Request $request, $id){
