@@ -1,0 +1,19 @@
+{% extends 'base.html.twig' %}
+{% block error %}{% endblock %}
+
+{% block body %}
+<div class="container">
+    <div class="col-lg-4 box-form">
+        <h2>Login</h2>
+        <form action="{{ path('app_login') }}" method="post">
+            <div class="form-group">
+                <input type="text" id="email" name="_username" class="form-control" value="{{ last_username }}"/>
+            </div>
+            <div class="form-group">
+                <input type="password" id="password" name="_password" class="form-control"/>
+            </div>
+            <button type="submit" class="btn btn-success">login</button>
+        </form>
+    </div>
+</div>
+{% endblock %}

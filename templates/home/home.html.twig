@@ -1,0 +1,27 @@
+{% extends 'base.html.twig' %}
+{% block stylesheets %}
+    {{ parent() }}
+    <link rel="stylesheet" href="{{ asset('css/home.css') }}">
+{% endblock %}
+{% block body %}
+    <h2 style="margin-top: 10px">Ultimos Post</h2>
+
+    <div class="post">
+        <h3>Publicado</h3><h3>Tema</h3><h3 class="author">Autor</h3>
+    </div>
+
+    <table>
+        {% if posts != null %}
+            {% for post in posts %}
+                <tr class="visualizar-post">
+                    <td class="titleFecha">{{ post.createdAt|date('Y-m-d') }}</td>
+                    <td class="titlePost"><a href="post/show/{{ post.id }}">{{ post.title }}</a></td>
+                    <td ><p class="autorPost">{{ post.author }}</p></td>
+                </tr>
+            {% endfor %}
+        {% endif %}
+    </table>
+
+
+{% endblock %}
+

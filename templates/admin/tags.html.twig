@@ -1,0 +1,25 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello AdminController!{% endblock %}
+
+{% block body %}
+    {% if is_granted('ROLE_ADMIN') %}
+
+        <h1>Administración de tags</h1>
+        <table class="tabla-users">
+
+            {% for tag in tags %}
+                <tr>
+                    <td ><a  href="admin/{{ tag.id }}">{{ tag.tag }}</a></td>
+                    <td><a class="btn btn-dark edit-user" href="tags/edit/{{ tag.id }}">Edit</a></td>
+                    <td><a class="btn btn-danger delete-tag" data-id="{{
+                        tag.id}}">Delete</a></td>
+                </tr>
+            {% endfor %}
+        </table>
+    {% endif %}
+
+{% endblock %}
+{% block javascripts %}
+    <script src="{{ asset('js/AdminJS.js') }}"></script>
+{% endblock %}

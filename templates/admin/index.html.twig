@@ -1,0 +1,18 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello AdminController!{% endblock %}
+
+{% block body %}
+    {% if is_granted('ROLE_ADMIN') %}
+
+        <h1>Administración de tags</h1>
+        <table class="tabla-users">
+            <tr>
+                <td ><a class="btn btn-info user" href="admin/tags">Tags</a></td>
+                <td><a class="btn btn-success show" href="admin/users">Usuarios</a></td>
+                <td><a class="btn btn-dark edit-user" href="admin/post">Post</a></td>
+            </tr>
+        </table>
+    {% endif %}
+
+{% endblock %}
