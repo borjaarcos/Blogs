@@ -146,7 +146,7 @@ class AdminController extends AbstractController
             'posts'=>$posts]);
     }
     /**
-     * @Route("admin/post/edit/{id}", name="post_edit")
+     * @Route("/admin/post/edit/{id}", name="post_adminedit")
      */
     public function editPost(Request $request, $id)
     {
@@ -167,7 +167,7 @@ class AdminController extends AbstractController
         }
 
         //renderizar el formulario
-        return $this->render('post/editar.html.twig', [
+        return $this->render('admin/editarPost.html.twig', [
             'error' => $error,
             'form' => $form->createView()
         ]);
