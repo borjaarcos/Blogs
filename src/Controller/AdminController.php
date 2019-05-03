@@ -145,7 +145,7 @@ class AdminController extends AbstractController
             'posts'=>$posts]);
     }
     /**
-     * @Route("/admin/post/edit/{id}", name="post_edit")
+     * @Route("admin/post/edit/{id}", name="post_edit")
      */
     public function editPost(Request $request, $id)
     {
