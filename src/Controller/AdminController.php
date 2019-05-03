@@ -15,6 +15,7 @@ use Symfony\Component\Security\Core\Encoder\UserPasswordEncoderInterface;
 use Symfony\Component\Security\Http\Authentication\AuthenticationUtils;
 use App\Form\ComentType;
 use App\Form\TagType;
+use App\Entity\Post;
 /**
  * Class AdminController
  * @package App\Controller
@@ -140,7 +141,7 @@ class AdminController extends AbstractController
     public function allPost()
     {
         $posts=$this->getDoctrine()->getRepository(Post::class)->findAll();
-        return $this->render('post/index.html.twig',[
+        return $this->render('admin/showPost.html.twig',[
             'posts'=>$posts]);
     }
     /**

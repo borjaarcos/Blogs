@@ -2,10 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="14fca5ff-156b-4ffa-a333-d4f4a3b4d493" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Form/Type/TagsInputType.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../A1" beforeDir="false" afterPath="$PROJECT_DIR$/../A1" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../A2Cookies/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/../A2Cookies/index.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../A2Cookies/pag2.php" beforeDir="false" afterPath="$PROJECT_DIR$/../A2Cookies/pag2.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/AdminController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/AdminController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../projects" beforeDir="false" afterPath="$PROJECT_DIR$/../projects" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -127,7 +128,7 @@
           <entry key="post_tag" value="2" />
           <entry key="sql" value="2" />
           <entry key="tag" value="7" />
-          <entry key="twig" value="150" />
+          <entry key="twig" value="152" />
           <entry key="user" value="17" />
           <entry key="yaml" value="6" />
         </counts>
@@ -141,7 +142,7 @@
           <entry key="PHP" value="146" />
           <entry key="PLAIN_TEXT" value="12" />
           <entry key="Scratch" value="2" />
-          <entry key="Twig" value="150" />
+          <entry key="Twig" value="152" />
           <entry key="YAML" value="6" />
         </counts>
       </usages-collector>
@@ -152,8 +153,8 @@
           <entry key="dist" value="28" />
           <entry key="env" value="29" />
           <entry key="js" value="596" />
-          <entry key="php" value="5507" />
-          <entry key="twig" value="3223" />
+          <entry key="php" value="5521" />
+          <entry key="twig" value="3233" />
           <entry key="txt" value="18" />
           <entry key="yaml" value="105" />
         </counts>
@@ -162,10 +163,10 @@
         <counts>
           <entry key="CSS" value="479" />
           <entry key="JavaScript" value="596" />
-          <entry key="PHP" value="5507" />
+          <entry key="PHP" value="5521" />
           <entry key="PLAIN_TEXT" value="75" />
           <entry key="Scratch" value="5" />
-          <entry key="Twig" value="3223" />
+          <entry key="Twig" value="3233" />
           <entry key="YAML" value="105" />
         </counts>
       </usages-collector>
@@ -190,10 +191,9 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Controller/PostController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="171">
-              <caret line="29" selection-start-line="29" selection-end-line="29" />
+            <state relative-caret-position="135">
+              <caret line="9" selection-start-line="9" selection-end-line="9" selection-end-column="20" />
               <folding>
-                <element signature="e#34#57#0#PHP" expanded="true" />
                 <element signature="e#650#672#0#PHP" expanded="true" />
                 <element signature="e#1778#1792#1#PHP" expanded="true" />
                 <element signature="e#1860#1881#0#PHP" expanded="true" />
@@ -201,6 +201,7 @@
                 <element signature="e#2666#2689#0#PHP" expanded="true" />
                 <element signature="e#3626#3640#1#PHP" expanded="true" />
                 <element signature="e#3718#3739#0#PHP" expanded="true" />
+                <element signature="e#4550#4563#0#PHP" expanded="true" />
                 <element signature="e#4815#4825#0#PHP" expanded="true" />
               </folding>
             </state>
@@ -210,11 +211,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/base.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="217">
-              <caret line="77" column="72" selection-start-line="77" selection-start-column="72" selection-end-line="77" selection-end-column="72" />
-              <folding>
-                <element signature="e#4179#4190#0#Twig" expanded="true" />
-              </folding>
+            <state relative-caret-position="397">
+              <caret line="77" column="63" selection-start-line="77" selection-start-column="63" selection-end-line="77" selection-end-column="63" />
             </state>
           </provider>
         </entry>
@@ -222,13 +220,34 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Controller/AdminController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="66">
-              <caret line="144" column="5" lean-forward="true" selection-start-line="144" selection-start-column="5" selection-end-line="144" selection-end-column="5" />
+            <state relative-caret-position="255">
+              <caret line="17" column="20" selection-start-line="17" selection-start-column="20" selection-end-line="17" selection-end-column="20" />
               <folding>
-                <element signature="e#4394#4416#0#PHP" expanded="true" />
+                <element signature="e#34#61#0#PHP" expanded="true" />
+                <element signature="e#3412#3434#0#PHP" expanded="true" />
+                <element signature="e#4397#4423#0#PHP" expanded="true" />
                 <element signature="e#4820#4834#1#PHP" expanded="true" />
                 <element signature="e#4913#4936#0#PHP" expanded="true" />
+                <element signature="e#4394#4416#0#PHP" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/admin/showPost.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="156">
+              <caret line="15" column="97" selection-start-line="15" selection-start-column="97" selection-end-line="15" selection-end-column="97" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/post/post.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="195">
+              <caret line="13" column="116" selection-start-line="13" selection-start-column="116" selection-end-line="13" selection-end-column="116" />
             </state>
           </provider>
         </entry>
@@ -236,8 +255,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/post/index.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="15" column="64" selection-start-line="15" selection-start-column="64" selection-end-line="15" selection-end-column="64" />
+            <state>
+              <caret selection-end-line="30" selection-end-column="14" />
             </state>
           </provider>
         </entry>
@@ -265,15 +284,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state>
               <caret selection-end-line="15" selection-end-column="12" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/admin/editarPost.html.twig">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="15" column="12" selection-start-line="15" selection-start-column="12" selection-end-line="15" selection-end-column="12" />
             </state>
           </provider>
         </entry>
@@ -306,7 +316,7 @@
     </dirStrings>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -339,7 +349,6 @@
         <option value="$PROJECT_DIR$/src/Form/ComentType.php" />
         <option value="$PROJECT_DIR$/templates/post/post.html.twig" />
         <option value="$PROJECT_DIR$/templates/post/show.html.twig" />
-        <option value="$PROJECT_DIR$/templates/base.html.twig" />
         <option value="$PROJECT_DIR$/src/Controller/TagController.php" />
         <option value="$PROJECT_DIR$/public/js/AdminJS.js" />
         <option value="$PROJECT_DIR$/templates/admin/tags.html.twig" />
@@ -350,6 +359,8 @@
         <option value="$PROJECT_DIR$/templates/home/home.html.twig" />
         <option value="$PROJECT_DIR$/templates/admin/index.html.twig" />
         <option value="$PROJECT_DIR$/src/Controller/PostController.php" />
+        <option value="$PROJECT_DIR$/templates/base.html.twig" />
+        <option value="$PROJECT_DIR$/templates/admin/showPost.html.twig" />
         <option value="$PROJECT_DIR$/src/Controller/AdminController.php" />
       </list>
     </option>
@@ -616,12 +627,12 @@
       <workItem from="1556197999710" duration="8334000" />
       <workItem from="1556637696915" duration="1152000" />
       <workItem from="1556892416155" duration="2434000" />
-      <workItem from="1556897273298" duration="3108000" />
+      <workItem from="1556897273298" duration="4459000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="158534000" />
+    <option name="totallyTimeSpent" value="159885000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1360" height="633" extended-state="6" />
@@ -667,9 +678,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/composer.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/packages/security.yaml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
@@ -796,13 +804,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Entity/Comment.php">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/post/post.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="116" selection-start-line="13" selection-start-column="116" selection-end-line="13" selection-end-column="116" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Form/ComentType.php">
       <provider selected="true" editor-type-id="text-editor">
@@ -933,27 +934,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/post/index.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="64" selection-start-line="15" selection-start-column="64" selection-end-line="15" selection-end-column="64" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/js/AdminJS.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="16">
           <caret line="20" column="37" selection-start-line="20" selection-start-column="37" selection-end-line="20" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/base.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="217">
-          <caret line="77" column="72" selection-start-line="77" selection-start-column="72" selection-end-line="77" selection-end-column="72" />
-          <folding>
-            <element signature="e#4179#4190#0#Twig" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -978,24 +962,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Controller/PostController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="29" selection-start-line="29" selection-end-line="29" />
-          <folding>
-            <element signature="e#34#57#0#PHP" expanded="true" />
-            <element signature="e#650#672#0#PHP" expanded="true" />
-            <element signature="e#1778#1792#1#PHP" expanded="true" />
-            <element signature="e#1860#1881#0#PHP" expanded="true" />
-            <element signature="e#2573#2587#1#PHP" expanded="true" />
-            <element signature="e#2666#2689#0#PHP" expanded="true" />
-            <element signature="e#3626#3640#1#PHP" expanded="true" />
-            <element signature="e#3718#3739#0#PHP" expanded="true" />
-            <element signature="e#4815#4825#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/admin/post.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="196">
@@ -1003,14 +969,63 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/templates/post/post.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="116" selection-start-line="13" selection-start-column="116" selection-end-line="13" selection-end-column="116" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/post/index.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="30" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/admin/showPost.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="156">
+          <caret line="15" column="97" selection-start-line="15" selection-start-column="97" selection-end-line="15" selection-end-column="97" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controller/PostController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" selection-start-line="9" selection-end-line="9" selection-end-column="20" />
+          <folding>
+            <element signature="e#650#672#0#PHP" expanded="true" />
+            <element signature="e#1778#1792#1#PHP" expanded="true" />
+            <element signature="e#1860#1881#0#PHP" expanded="true" />
+            <element signature="e#2573#2587#1#PHP" expanded="true" />
+            <element signature="e#2666#2689#0#PHP" expanded="true" />
+            <element signature="e#3626#3640#1#PHP" expanded="true" />
+            <element signature="e#3718#3739#0#PHP" expanded="true" />
+            <element signature="e#4550#4563#0#PHP" expanded="true" />
+            <element signature="e#4815#4825#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/base.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="397">
+          <caret line="77" column="63" selection-start-line="77" selection-start-column="63" selection-end-line="77" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Controller/AdminController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="144" column="5" lean-forward="true" selection-start-line="144" selection-start-column="5" selection-end-line="144" selection-end-column="5" />
+        <state relative-caret-position="255">
+          <caret line="17" column="20" selection-start-line="17" selection-start-column="20" selection-end-line="17" selection-end-column="20" />
           <folding>
-            <element signature="e#4394#4416#0#PHP" expanded="true" />
+            <element signature="e#34#61#0#PHP" expanded="true" />
+            <element signature="e#3412#3434#0#PHP" expanded="true" />
+            <element signature="e#4397#4423#0#PHP" expanded="true" />
             <element signature="e#4820#4834#1#PHP" expanded="true" />
             <element signature="e#4913#4936#0#PHP" expanded="true" />
+            <element signature="e#4394#4416#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
