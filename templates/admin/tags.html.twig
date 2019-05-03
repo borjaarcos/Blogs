@@ -12,8 +12,7 @@
                 <tr>
                     <td ><a  href="admin/{{ tag.id }}">{{ tag.tag }}</a></td>
                     <td><a class="btn btn-dark edit-user" href="tags/edit/{{ tag.id }}">Edit</a></td>
-                    <td><a class="btn btn-danger delete-tag" data-id="{{
-                        tag.id}}">Delete</a></td>
+                    <td><a class="btn btn-danger" href="{{ path('tag_delete',{'id':tag.id}) }}">Delete</a></td>
                 </tr>
             {% endfor %}
         </table>

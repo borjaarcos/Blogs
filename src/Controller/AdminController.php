@@ -114,7 +114,7 @@ class AdminController extends AbstractController
 }
 
     /**
-     * @Route("admin/users/delete/{id}")
+     * @Route("admin/users/delete/{id}" , name="admin_userDelete")
      * @Method({"DELETE"})
      */
     public function deleteUser(Request $request, $id){
@@ -131,7 +131,7 @@ class AdminController extends AbstractController
 
         }
             $users = $this->getDoctrine()->getRepository(User::class)->findAll();
-            return $this->render('user.html.twig', [
+            return $this->redirectToRoute('app_adminUser', [
                 'users' => $users]);
 
 

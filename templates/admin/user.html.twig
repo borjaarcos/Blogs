@@ -14,14 +14,10 @@
                 <td ><a class="user" href="users/{{ user.id }}">{{ user.email }}</a></td>
                 <td><a class="btn btn-success show" href="users/{{ user.id }}">Ver</a></td>
                 <td><a class="btn btn-dark edit-user" href="users/edit/{{ user.id }}">Edit</a></td>
-                <td><a class="btn btn-danger delete-user" data-id="{{
-            user.id}}">Delete</a></td>
+                <td><a class="btn btn-danger delete-user" href="{{ path('admin_userDelete',{'id':user.id}) }}"">Delete</a></td>
             </tr>
         {% endfor %}
         </table>
     {% endif %}
 
-{% endblock %}
-{% block javascripts %}
-    <script src="{{ asset('js/AdminJS.js') }}"></script>
 {% endblock %}
