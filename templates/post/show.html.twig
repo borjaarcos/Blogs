@@ -5,10 +5,18 @@
 {% endblock %}
 {% block body %}
     <h1>{{ post.title }}</h1>
-    <p>{{ post.content | raw}}</p>
+    <div>
+        <p class="autores">{{ post.author }}</p>
+        <p class="contenido">{{ post.content | raw}}</p>
+
+    </div>
+
     <h2>Comentarios</h2>
     {% for comment in post.comment %}
-        {{ comment.comment }}{% if app.user ==  comment.user  %}<a class="user" href="users/">Editar</a>{% endif %}
+        <div>
+            <p class="autores">{{ comment.user.getUsername() }}</p>
+            <p class="contenido"> {{ comment.comment }}</p>{% if app.user ==  comment.user  %}<a class="user" href="users/">Editar</a>{% endif %}
+        </div>
     {% endfor %}
     {% if app.user is not null %}
         {{ form_start(form) }}

@@ -15,12 +15,11 @@
                 <tr>
                     <td ><a class="user" href="post/show/{{ post.id }}">{{ post.title }}</a></td>
                     {% if is_granted("ROLE_ADMIN") %}
-                    <td ><a class="btn btn-dark edit-user" href="post/edit/{{ post.id }}">Edit</a></td>
+                    <td ><a class="btn btn-dark edit-user" {{ path('post_adminedit',{'id':post.id}) }}>Edit</a></td>
                         {% else %}
-                            <a class="btn btn-dark edit-user" href="post/edit/{{ post.id }}">Edit</a></td>
+                            <a class="btn btn-dark edit-user" {{ path('post_adminedit',{'id':post.id}) }}>Edit</a></td>
                     {% endif %}
-                    <td><a class="btn btn-danger delete-post" data-id="{{
-                        post.id}}">Delete</a></td>
+                    <td><a class="btn btn-danger delete-post" {{ path('post_admindelete',{'id':post.id}) }}>Delete</a></td>
                 </tr>
             {% endfor %}
         </table>

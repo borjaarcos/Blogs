@@ -14,9 +14,8 @@
             {% for post in posts %}
                 <tr>
                     <td ><a class="user" href="post/show/{{ post.id }}">{{ post.title }}</a></td>
-                        <td ><a class="btn btn-dark edit-user" href="{{ path('post_adminedit',{'id':post.id}) }}">Edit</a></td>
-                    <td><a class="btn btn-danger delete-post" data-id="{{
-                        post.id}}">Delete</a></td>
+                        <td ><a class="btn btn-dark edit-user" href="{{ path('post_adminEditPost',{'id':post.id}) }}">Edit</a></td>
+                    <td><a class="btn btn-danger" href="{{ path('post_admindelete',{'id':post.id}) }}">Delete</a></td>
                 </tr>
             {% endfor %}
         </table>

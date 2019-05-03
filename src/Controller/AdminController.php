@@ -16,6 +16,7 @@ use Symfony\Component\Security\Http\Authentication\AuthenticationUtils;
 use App\Form\ComentType;
 use App\Form\TagType;
 use App\Entity\Post;
+use App\Entity\Comment;
 use App\Form\PostType;
 /**
  * Class AdminController
@@ -146,7 +147,7 @@ class AdminController extends AbstractController
             'posts'=>$posts]);
     }
     /**
-     * @Route("/admin/post/edit/{id}", name="post_adminedit")
+     * @Route("/admin/post/edit/{id}", name="post_adminEditPost")
      */
     public function editPost(Request $request, $id)
     {
@@ -173,6 +174,37 @@ class AdminController extends AbstractController
         ]);
 
     }
+
+    /**
+     * @Route("post/delete/{id}", name="post_admindelete")
+     * @Method({"DELETE"})
+     */
+    public function deletePost(Request $request, $id){
+
+        $post = $this->getDoctrine()->getRepository(Post::class)->find($id);
+        $comments=$this->getDoctrine()->getRepository(Comment::class)->findBy(array('post'=> $post));
+
+        $entityManager = $this->getDoctrine()->getManager();
+        if(count($comments)>=1){
+            foreach($comments as $comment){
+                $entityManager->remove($comment);
+            }
+        }
+        $entityManager->remove($post);
+        $entityManager->flush();
+
+        $response = new Response();
+        $response->send();
+
+
+
+        $posts = $this->getDoctrine()->getRepository(Post::class)->findAll();
+
+            return $this->redirectToRoute('app_allPost', [
+                'posts' => $posts]);
+
+
+    }
     /**
      * @Route("/admin/tags", name="app_adminTags")
      */
@@ -184,7 +216,7 @@ class AdminController extends AbstractController
     }
 
     /**
-     * @Route("admin/tags/delete/{id}")
+     * @Route("admin/tags/delete/{id}", name="tag_delete")
      * @Method({"DELETE"})
      */
     public function deleteTag(Request $request, $id){

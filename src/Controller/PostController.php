@@ -119,7 +119,7 @@ class PostController extends AbstractController
 
     }
     /**
-     * @Route("post/delete/{id}")
+     * @Route("post/delete/{id}", name="post_adminedit")
      * @Method({"DELETE"})
      */
     public function deletePost(Request $request, $id){
